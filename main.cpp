@@ -1,7 +1,12 @@
 #include "matrix.hpp"
-#include <fstream>
+
 
 int main() {
-    Matrix test(4);
-    test.print_matrix();
+    auto matrices = create_matrices("input.txt");
+    Matrix Matrix1 = matrices.first;
+    Matrix Matrix2 = matrices.second;
+
+    Matrix1.print_matrix();
+    
+    
 }
