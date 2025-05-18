@@ -47,6 +47,9 @@ void Matrix::set_value(std::size_t i, std::size_t j, int n){
 
 //returns matrix element at given indices
 int Matrix::get_value(std::size_t i, std::size_t j) const {
+    if(i > matrix.size() || j > matrix.size()){
+        std::out_of_range("indices out of range");
+    }
 
     return matrix[i][j];
 }

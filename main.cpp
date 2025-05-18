@@ -6,7 +6,6 @@ int main() {
     Matrix Matrix1 = matrices.first;
     Matrix Matrix2 = matrices.second;
 
-    Matrix1.print_matrix();
     
     
 }
