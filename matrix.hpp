@@ -1,10 +1,14 @@
 #ifndef __MATRIX_HPP__
 #define __MATRIX_HPP__
 
+#include <iostream>
 #include <cstdint>
 #include <vector>
 
 class Matrix {
+private:
+    std::vector<std::vector<int> > matrix;
+
 public:
     Matrix(std::size_t N);
     Matrix(std::vector<std::vector<int>> nums);
@@ -20,5 +24,8 @@ public:
     void swap_cols(std::size_t c1, std::size_t c2);
     void print_matrix() const;
 };
+
+
+
 
 #endif // __MATRIX_HPP__

@@ -1,5 +1,7 @@
 #include "matrix.hpp"
+#include <fstream>
 
-int main(int argc, char *argv[]) {
-    return 0;
+int main() {
+    Matrix test(4);
+    test.print_matrix();
 }
